@@ -2,7 +2,19 @@ interface BlogType {
   title: string
   name: string
   type: string
-  fields: {title: string; name: string; type: string}[]
+  fields: {
+    title: string
+    name: string
+    type: string
+    initialValue?: string
+
+    readOnly?: boolean
+    options?: {
+      dateFormat: string
+      timeFormat: string
+      calendarTodayLabel: string
+    }
+  }[]
 }
 
 const Blogs: BlogType = {
@@ -16,8 +28,20 @@ const Blogs: BlogType = {
       type: 'string',
     },
     {
-      title: 'Age',
-      name: 'age',
+      title: 'Created Date/Time',
+      name: 'created',
+      type: 'datetime',
+      initialValue: new Date().toISOString(),
+      readOnly: true,
+      options: {
+        dateFormat: 'ddd, MMM Do YYYY',
+        timeFormat: 'h:mm a',
+        calendarTodayLabel: 'Today',
+      },
+    },
+    {
+      title: 'Serial',
+      name: 'serial',
       type: 'number',
     },
     {
