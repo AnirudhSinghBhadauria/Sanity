@@ -53,3 +53,6 @@ const Blogs: BlogType = {
 }
 
 export default Blogs
+
+// hello this thing can be done better
+
