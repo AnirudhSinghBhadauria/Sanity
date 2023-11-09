@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CDN Tunnel.iml" filepath="$PROJECT_DIR$/.idea/CDN Tunnel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../REACT Raw Projects/centre-excellence/.idea/centre-excellence.iml" filepath="$PROJECT_DIR$/../../REACT Raw Projects/centre-excellence/.idea/centre-excellence.iml" />
     </modules>
   </component>
 </project>
